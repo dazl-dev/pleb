@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { allPackagesFromContext, isString, resolveDirectoryContext } from '@wixc3/resolve-directory-context';
+import { allPackagesFromContext, isString, resolveDirectoryContext } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import path from 'node:path';
 import PromiseQueue from 'p-queue';

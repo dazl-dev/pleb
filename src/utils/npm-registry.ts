@@ -1,4 +1,4 @@
-import { isPlainObject } from '@wixc3/resolve-directory-context';
+import { isPlainObject } from '@dazl/resolve-directory-context';
 import http from 'node:http';
 import https from 'node:https';
 import { FetchError, fetchText, isSecureUrl } from './http.ts';

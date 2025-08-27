@@ -1,4 +1,4 @@
-import { childPackagesFromContext, resolveDirectoryContext } from '@wixc3/resolve-directory-context';
+import { childPackagesFromContext, resolveDirectoryContext } from '@dazl/resolve-directory-context';
 import type { SpawnSyncOptions } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';

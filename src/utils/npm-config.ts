@@ -1,4 +1,4 @@
-import { findFileUpSync } from '@wixc3/resolve-directory-context';
+import { findFileUpSync } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';

@@ -1,4 +1,4 @@
-import { type INpmPackage } from '@wixc3/resolve-directory-context';
+import { type INpmPackage } from '@dazl/resolve-directory-context';
 import { retry } from 'promise-assist';
 import { log, logWarn } from './log.ts';
 import type { NpmRegistry } from './npm-registry.ts';
