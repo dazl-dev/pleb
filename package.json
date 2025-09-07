@@ -25,7 +25,7 @@
     "@dazl/resolve-directory-context": "^5.0.1",
     "colorette": "^2.0.20",
     "commander": "^14.0.0",
-    "p-queue": "^8.1.0",
+    "p-queue": "^8.1.1",
     "promise-assist": "^2.0.1",
     "semver": "^7.7.2"
   },
