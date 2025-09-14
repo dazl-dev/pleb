@@ -22,7 +22,7 @@
     "prettify": "prettier . --write"
   },
   "dependencies": {
-    "@dazl/resolve-directory-context": "^5.0.1",
+    "@dazl/resolve-directory-context": "^5.1.0",
     "colorette": "^2.0.20",
     "commander": "^14.0.1",
     "p-queue": "^8.1.1",
@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "prettier": "^3.6.2",
-    "type-fest": "^4.41.0",
+    "type-fest": "^5.0.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.43.0"
   },
