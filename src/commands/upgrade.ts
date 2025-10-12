@@ -44,6 +44,7 @@ export async function upgrade({
           ([packageName, packageVersion]) =>
             !internalPackageNames.has(packageName) &&
             !isFileColonRequest(packageVersion!) &&
+            !isNpmColonRequest(packageVersion!) &&
             !(packageName === '@types/node' && isPureNumericRequest(packageVersion!)),
         )
         .map(([packageName]) => packageName),
@@ -72,6 +73,7 @@ export async function upgrade({
     if (
       latestVersion !== undefined &&
       !isFileColonRequest(currentRequest) &&
+      !isNpmColonRequest(currentRequest) &&
       (!currentRequestAsSemver || !gt(currentRequestAsSemver, latestVersion))
     ) {
       return currentRequest.startsWith('~') ? `~${latestVersion}` : `^${latestVersion}`;
@@ -187,6 +189,10 @@ export async function fetchLatestPackageVersions({
 
 function isFileColonRequest(request: string) {
   return request.startsWith('file:');
+}
+
+function isNpmColonRequest(request: string) {
+  return request.startsWith('npm:');
 }
 
 function isPureNumericRequest(request: string) {
