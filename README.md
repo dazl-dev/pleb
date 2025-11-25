@@ -60,7 +60,7 @@ jobs:
   npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Use Node.js 24
         uses: actions/setup-node@v6
         with:
