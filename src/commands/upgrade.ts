@@ -43,7 +43,7 @@ export async function upgrade({
         .filter(
           ([packageName, packageVersion]) =>
             !internalPackageNames.has(packageName) &&
-            !isFileColonRequest(packageVersion!) &&
+            !isFileOrWorkspaceRequest(packageVersion!) &&
             !isNpmColonRequest(packageVersion!) &&
             !(packageName === '@types/node' && isPureNumericRequest(packageVersion!)),
         )
@@ -72,7 +72,7 @@ export async function upgrade({
     const currentRequestAsSemver = coerce(currentRequest);
     if (
       latestVersion !== undefined &&
-      !isFileColonRequest(currentRequest) &&
+      !isFileOrWorkspaceRequest(currentRequest) &&
       !isNpmColonRequest(currentRequest) &&
       (!currentRequestAsSemver || !gt(currentRequestAsSemver, latestVersion))
     ) {
@@ -187,8 +187,8 @@ export async function fetchLatestPackageVersions({
   return packageNameToVersion;
 }
 
-function isFileColonRequest(request: string) {
-  return request.startsWith('file:');
+function isFileOrWorkspaceRequest(request: string) {
+  return request.startsWith('file:') || request.startsWith('workspace:');
 }
 
 function isNpmColonRequest(request: string) {
