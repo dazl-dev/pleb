@@ -24,7 +24,7 @@
   "dependencies": {
     "@dazl/resolve-directory-context": "^5.1.0",
     "colorette": "^2.0.20",
-    "commander": "^14.0.2",
+    "commander": "^14.0.3",
     "p-queue": "^9.1.0",
     "promise-assist": "^2.0.1",
     "semver": "^7.7.3"
