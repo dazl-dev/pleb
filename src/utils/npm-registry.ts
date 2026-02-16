@@ -57,7 +57,7 @@ export class NpmRegistry {
         const versions = Object.keys(packument.versions);
         return versions;
       } catch (parseError) {
-        throw new Error(`${(parseError as Error)?.stack ?? String(parseError)}\nResponse is:\n${responseText}`);
+        throw new Error(`Error while parsing registry response.\nResponse is:\n${responseText}`, { cause: parseError });
       }
     } catch (error) {
       if ((error as FetchError)?.statusCode === 404) {

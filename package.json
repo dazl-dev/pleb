@@ -30,15 +30,16 @@
     "semver": "^7.7.4"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "20",
     "@types/semver": "^7.7.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "prettier": "^3.8.1",
     "type-fest": "^5.4.4",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.55.0"
+    "typescript-eslint": "^8.56.0"
   },
   "files": [
     "bin",
