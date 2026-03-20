@@ -37,7 +37,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-no-only-tests": "^3.3.0",
     "prettier": "^3.8.1",
-    "type-fest": "^5.4.4",
+    "type-fest": "^5.5.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.1"
   },
