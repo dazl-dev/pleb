@@ -41,11 +41,6 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.0"
   },
-  "overrides": {
-    "typescript-eslint": {
-      "typescript": "~6.0.2"
-    }
-  },
   "files": [
     "bin",
     "dist",
