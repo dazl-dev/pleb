@@ -24,7 +24,7 @@ export async function loadPlebConfig(directoryPath: string): Promise<Configurati
       if (!isPlainObject(configValue)) {
         throw new Error(`config file ${configFilePath} doesn't export a default object`);
       }
-      return configValue as Configuration;
+      return configValue;
     }
   }
   return {};
