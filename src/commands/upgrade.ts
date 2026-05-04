@@ -69,7 +69,7 @@ export async function upgrade({
 
   const getVersionRequest = (packageName: string, currentRequest: string): string => {
     const latestVersion = packageNameToVersion.get(packageName);
-    const currentRequestAsSemver = coerce(currentRequest);
+    const currentRequestAsSemver = coerce(currentRequest, { includePrerelease: true });
     if (
       latestVersion !== undefined &&
       !isFileOrWorkspaceRequest(currentRequest) &&
