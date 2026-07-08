@@ -14,10 +14,9 @@
     "clean": "node -e \"fs.rmSync('./dist', { recursive: true, force: true })\"",
     "prebuild": "npm run clean",
     "build": "tsc --build",
-    "pretest": "npm run lint && npm run build",
+    "pretest": "npm run build",
     "test": "npm run test:only",
     "test:only": "node --test --enable-source-maps \"dist/test/*.test.js\"",
-    "lint": "eslint",
     "prepack": "npm run build",
     "prettify": "prettier . --write"
   },
@@ -30,16 +29,11 @@
     "semver": "^7.8.5"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/node": "22",
     "@types/semver": "^7.7.1",
-    "eslint": "^10.6.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-no-only-tests": "^3.4.0",
     "prettier": "^3.9.4",
     "type-fest": "^5.8.0",
-    "typescript": "~6.0.3",
-    "typescript-eslint": "^8.63.0"
+    "typescript": "~6.0.3"
   },
   "files": [
     "bin",

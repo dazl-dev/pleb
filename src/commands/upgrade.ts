@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { allPackagesFromContext, isString, resolveDirectoryContext } from '@dazl/resolve-directory-context';
 import fs from 'node:fs';
 import path from 'node:path';
